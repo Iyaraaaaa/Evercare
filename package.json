@@ -1,0 +1,16 @@
+{
+  "name": "medicare",
+  "version": "1.0.0",
+  "description": "Medicare Mobile App. ![WhatsApp Image 2025-04-21 at 11 07 14_cb285f1a](https://github.com/user-attachments/assets/3f49b456-6188-43a8-9958-7c0ebdfb3653)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.1.0"
+  }
+}

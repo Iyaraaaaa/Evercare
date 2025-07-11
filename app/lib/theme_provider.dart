@@ -18,7 +18,7 @@ class ThemeProvider extends ChangeNotifier {
           bodyMedium: TextStyle(color: Colors.black87),
         ),
         iconTheme: const IconThemeData(color: Colors.black87),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: Colors.white,
           elevation: 1,
           shape: RoundedRectangleBorder(
@@ -67,7 +67,7 @@ class ThemeProvider extends ChangeNotifier {
           bodyMedium: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(color: Colors.white70),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: const Color(0xFF1E1E1E),
           elevation: 1,
           shape: RoundedRectangleBorder(
