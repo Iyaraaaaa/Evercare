@@ -23,13 +23,14 @@ class EditProfilePage extends StatefulWidget {
   final String userImage;
 
   const EditProfilePage({
-    Key? key,
+    super.key,
     required this.userName,
     required this.userEmail,
     required this.userImage,
-  }) : super(key: key);
+  });
 
   @override
+  // ignore: library_private_types_in_public_api
   _EditProfilePageState createState() => _EditProfilePageState();
 }
 
@@ -189,9 +190,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('userName', nameController.text);
       await prefs.setString('userEmail', emailController.text);
-      if (imageUrl != null) {
-        await prefs.setString('userImage', imageUrl);
-      }
+      await prefs.setString('userImage', imageUrl);
 
       _showSuccessSnackbar('Profile updated successfully!');
       if (mounted) Navigator.pop(context, true);
